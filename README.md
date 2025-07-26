@@ -2,7 +2,7 @@
 
 > The idea: a business directory and community platform for Indigenous entrepreneurs, creators, and professionals to connect, share, and thrive.
 
-![Screenshot of NDNCo.](./screenshots/ndnco-screenshot.webp)
+![Screenshot of NDNCo. homepage](./screenshots/ndnco-screenshot.webp)
 
 ---
 
