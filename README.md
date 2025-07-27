@@ -133,4 +133,5 @@ And this was a big first step.
 
 Want to connect, collaborate, or just say hello?
 Reach me at [kalwilson.dev@gmail.com](mailto:kalwilson.dev@gmail.com)
+
 Portfolio: [kalwilson.github.io](https://kalwilson.github.io)
