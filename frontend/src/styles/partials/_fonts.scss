@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $fw-light;
+  src:
+    url('#{$fp-light}') format('woff'),
+    url('#{$fp-light-alt}') format('woff2');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $fw-regular;
+  src:
+    url('#{$fp-regular}') format('woff'),
+    url('#{$fp-regular-alt}') format('woff2');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $fw-bold;
+  src:
+    url('#{$fp-bold}') format('woff'),
+    url('#{$fp-bold-alt}') format('woff2');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: $fw-light;
+  src:
+    url('#{$fp-italic-light}') format('woff'),
+    url('#{$fp-italic-light-alt}') format('woff2');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: $fw-regular;
+  src:
+    url('#{$fp-italic-regular}') format('woff'),
+    url('#{$fp-italic-regular-alt}') format('woff2');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: $fw-bold;
+  src:
+    url('#{$fp-italic-bold}') format('woff'),
+    url('#{$fp-italic-bold-alt}') format('woff2');
+}

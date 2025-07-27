@@ -1,0 +1,10 @@
+@use '@/styles/partials/variables.scss' as *;
+@use '@/styles/partials/mixins.scss' as *;
+
+.menu {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}

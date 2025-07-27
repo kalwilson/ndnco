@@ -1,0 +1,178 @@
+@use '@/styles/partials/variables.scss' as *;
+@use '@/styles/partials/mixins.scss' as *;
+
+.biz {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__back {
+    align-self: center;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+      position: relative;
+      top: 0.05rem;
+    }
+  }
+
+  &__name {
+    align-self: center;
+    text-decoration: underline;
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    @include desktop {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      padding-left: 0;
+      width: 100%;
+      max-width: 80rem;
+      align-self: center;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    @include desktop {
+      width: calc(60% - 1rem);
+      align-self: flex-start;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 10rem;
+    background-color: $main-b;
+    align-self: center;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.card {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 1rem auto;
+  color: $main-c;
+  font-weight: $fw-bold;
+  gap: 1rem;
+  border: 1px solid $accent-c;
+  padding: 0.5rem;
+  border-radius: 2px;
+
+  @include desktop {
+    width: calc(40% - 1rem);
+    align-self: flex-start;
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  &__heading {
+    color: $main-c;
+  }
+
+  &__website {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    background-color: $accent-b;
+    height: 4rem;
+    color: $alt-a;
+    border-radius: 0.25rem;
+    font-weight: $fw-bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+    &:active {
+      position: relative;
+      top: 0.2rem;
+    }
+  }
+  &__socials {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    list-style-type: none;
+
+    @include tablet {
+      flex-flow: row wrap;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    background-color: $accent-c;
+    border: 1px solid $accent-c;
+    border-radius: 0.25rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+    @include tablet {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  &__social-link {
+    align-self: center;
+    color: $main-a;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__contact {
+    font-weight: $fw-regular;
+  }
+
+  &__reserve {
+    color: $accent-b;
+  }
+  &__reserve--alt {
+    color: $accent-a;
+  }
+}

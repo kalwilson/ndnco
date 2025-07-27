@@ -1,0 +1,80 @@
+@use '@/styles/partials/variables.scss' as *;
+@use '@/styles/partials/mixins.scss' as *;
+
+.footer {
+  display: block;
+  background-color: $main-c;
+  color: $alt-a;
+
+  &__column {
+    padding: 0.5rem 1rem;
+  }
+
+  &__brand {
+    font-size: 1.5rem;
+    font-weight: $fw-regular;
+  }
+
+  &__landack {
+    font-size: 1rem;
+    font-weight: $fw-bold;
+    color: $accent-c;
+    line-height: 1.25rem;
+  }
+
+  &__nation {
+    color: $accent-b;
+    text-decoration: none;
+    font-variant: small-caps;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+  }
+
+  &__legal {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+
+    @include tablet {
+      flex-flow: row nowrap;
+    }
+  }
+
+  &__item {
+    line-height: 1.5rem;
+
+    @include tablet {
+      order: 2;
+    }
+  }
+
+  &__link {
+    color: $alt-b;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    font-size: 0.85rem;
+    color: $alt-b;
+
+    @include tablet {
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+export { default as AppHeader } from './AppHeader/AppHeader.vue'
+export { default as HeroSection } from './HeroSection/HeroSection.vue'
+export { default as BusinessSearch } from './BusinessSearch/BusinessSearch.vue'
+export { default as BusinessCard } from './BusinessCard/BusinessCard.vue'
+export { default as RegisterForm } from './RegisterForm/RegisterForm.vue'
+export { default as AppFooter } from './AppFooter/AppFooter.vue'

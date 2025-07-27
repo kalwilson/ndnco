@@ -1,0 +1,29 @@
+@use '@/styles/partials/variables' as *;
+@use '@/styles/partials/mixins' as *;
+
+.directory {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 1rem;
+
+  &__heading {
+    margin-bottom: 1rem;
+  }
+  &__display {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    @include tablet {
+      flex-flow: row wrap;
+      column-gap: 2rem;
+      justify-content: flex-start;
+    }
+  }
+}

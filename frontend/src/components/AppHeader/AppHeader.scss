@@ -1,0 +1,51 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.header {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid $main-b;
+  }
+
+  &__branding {
+    display: flex;
+    flex-flow: column nowrap;
+    text-decoration: none;
+  }
+
+  &__wordmark {
+    color: $main-c;
+  }
+
+  &__tagline {
+    color: $accent-a;
+    font-size: 1rem;
+    font-weight: $fw-bold;
+    line-height: 0.9rem;
+  }
+
+  &__mobile-btn {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    background: none;
+    border: none;
+    visibility: visible;
+    cursor: pointer;
+
+    @include tablet {
+      display: none;
+      visibility: hidden;
+    }
+
+    &:active {
+      position: relative;
+      top: 0.02rem;
+    }
+  }
+}

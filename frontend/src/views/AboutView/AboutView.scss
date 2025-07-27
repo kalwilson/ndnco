@@ -1,0 +1,45 @@
+@use '@/styles/partials/variables.scss' as *;
+@use '@/styles/partials/mixins.scss' as *;
+
+.about {
+  display: block;
+  background-color: $main-b;
+  &__container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+  }
+
+  &__heading {
+    text-decoration: underline;
+  }
+}
+
+.future {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__heading {
+    margin: 0.5rem 0;
+    color: $main-c;
+  }
+
+  &__blurb {
+    font-weight: $fw-bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__ideas {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0.5rem 0;
+  }
+
+  &__idea--italic {
+    font-style: italic;
+    font-weight: $fw-bold;
+  }
+}

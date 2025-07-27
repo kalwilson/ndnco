@@ -1,0 +1,45 @@
+@use '@/styles/partials/variables.scss' as *;
+@use '@/styles/partials/mixins.scss' as *;
+
+.scroll {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  background-color: $accent-a;
+
+  @include tablet {
+    padding: 1rem;
+  }
+
+  &__text {
+    display: inline-block;
+    animation-delay: 0s;
+    padding-left: 100%;
+    animation: scroll-left 115s linear infinite;
+    will-change: transform;
+  }
+
+  &__word {
+    margin-right: 1.25rem;
+    display: inline-block;
+    color: $main-a;
+    font-size: 1rem;
+    font-weight: $fw-regular;
+
+    @include tablet {
+      font-size: 1.25rem;
+      font-weight: $fw-bold;
+    }
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

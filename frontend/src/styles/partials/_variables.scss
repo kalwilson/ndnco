@@ -1,0 +1,43 @@
+//layout
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+//colors
+$main-a: #f7f7f7;
+$main-b: #cbcbc8;
+$main-c: #2b2b2b;
+
+$alt-a: #f4f2ee;
+$alt-b: #9e9e99;
+$alt-c: #1a1a1a;
+
+$accent-a: #873f2a;
+$accent-b: #75845c;
+$accent-c: #5f7980;
+
+//font control
+$font-family: 'BC Sans';
+
+//weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+//paths
+$fp-light: '/fonts/2023_03_14_BCSans-Light_2g.woff';
+$fp-light-alt: '/fonts/2023_03_14_BCSans-Light_2g.woff2';
+
+$fp-regular: '/fonts/2023_01_01_BCSans-Regular_2f.woff';
+$fp-regular-alt: '/fonts/2023_01_01_BCSans-Regular_2f.woff2';
+
+$fp-bold: '/fonts/2023_01_01_BCSans-Bold_2f.woff';
+$fp-bold-alt: '/fonts/2023_01_01_BCSans-Bold_2f.woff2';
+
+$fp-italic-light: '/fonts/2023_01_01_BCSans-LightItalic_2f.woff';
+$fp-italic-light-alt: '/fonts/2023_01_01_BCSans-LightItalic_2f.woff2';
+
+$fp-italic-regular: '/fonts/2023_01_01_BCSans-Italic_2f.woff';
+$fp-italic-regular-alt: '/fonts/2023_01_01_BCSans-Italic_2f.woff2';
+
+$fp-italic-bold: '/fonts/2023_01_01_BCSans-BoldItalic_2f.woff';
+$fp-italic-bold-alt: '/fonts/2023_01_01_BCSans-BoldItalic_2f.woff2';

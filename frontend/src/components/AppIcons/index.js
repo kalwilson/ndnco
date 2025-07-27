@@ -1,0 +1,7 @@
+export { default as AddIcon } from './AddIcon.vue'
+export { default as ArrowBackIcon } from './ArrowBackIcon.vue'
+export { default as MenuIcon } from './MenuIcon.vue'
+export { default as SearchIcon } from './SearchIcon.vue'
+export { default as ShareIcon } from './ShareIcon.vue'
+export { default as FacebookIcon } from './FacebookIcon.vue'
+export { default as InstagramIcon } from './InstagramIcon.vue'

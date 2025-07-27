@@ -1,0 +1,13 @@
+@use './variables' as *;
+@use './mixins' as *;
+.icon {
+  height: auto;
+  width: 1.5rem;
+  fill: $main-b;
+}
+
+.black {
+  height: 2rem;
+  width: 2rem;
+  fill: $main-c;
+}

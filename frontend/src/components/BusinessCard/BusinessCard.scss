@@ -1,0 +1,131 @@
+@use '@/styles/partials/variables.scss' as *;
+@use '@/styles/partials/mixins.scss' as *;
+
+.card {
+  width: 100%;
+  height: fit-content;
+  align-self: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $main-b;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(89, 89, 89, 0.025);
+
+  @include tablet {
+    width: calc(50% - 1rem);
+    min-height: 33rem;
+  }
+
+  @include desktop {
+    width: calc(33.33% - 2rem);
+    height: 35rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__top {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+  }
+  &__logo {
+    width: 100%;
+    height: 100%;
+    background-color: $alt-a;
+    object-fit: contain;
+  }
+  &__contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    font-weight: $fw-regular;
+    background-color: $accent-a;
+    color: $main-a;
+    text-align: right;
+    border-top-left-radius: 0.25rem;
+  }
+
+  &__bottom {
+    width: 100%;
+    flex-grow: 1;
+    border-top: 1px solid $accent-a;
+    padding: 1rem 0.75rem;
+  }
+  &__name {
+    color: $main-c;
+  }
+
+  &__lists {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  &__list--right {
+    @extend .card__list;
+    text-align: right;
+  }
+
+  &__item {
+    color: $accent-a;
+    font-size: 1rem;
+    font-weight: $fw-bold;
+  }
+
+  &__item--alt {
+    @extend .card__item;
+    color: $accent-c;
+    font-weight: $fw-regular;
+  }
+
+  &__region {
+    display: none;
+
+    @include tablet {
+      display: contents;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0.5rem;
+  }
+
+  &__btn {
+    min-width: fit-content;
+    width: 80vw;
+    padding: 1rem;
+    border: 1px solid $accent-b;
+    border-radius: 5px;
+    background-color: $accent-b;
+    color: $main-a;
+    font-weight: $fw-bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      width: 40vw;
+    }
+
+    @include desktop {
+      width: 24vw;
+    }
+  }
+}
